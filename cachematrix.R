@@ -1,5 +1,5 @@
 
-# The first function, `makeMatrix` is fully based on the example 'makeVector'
+# The first function, `makeCacheMatrix` is fully based on the example 'makeVector'
 # that was shared by R.D. Peng, as part of the course material.
 # It creates object with a list that returns four functions that can then be executed 
 # on the matrix that it receives when called. It can be used to create a matrixobject 

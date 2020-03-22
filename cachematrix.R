@@ -39,9 +39,7 @@
 	}
 	
 	# create a list with the defined objects so they can be called when needed.
-	list(set = set, get = get,
-	setInverse = setInverse,
-	getInverse = getInverse)
+	list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
     }
 
 # The following function is also fully based on the example 'cachemean'

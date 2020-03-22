@@ -11,7 +11,7 @@
 #3.  set the value of the inverse of the matrix
 #4.  get the value of the mean
 
- makeMatrix <- function(x = matrix()) { #stored a solvablematrix as default
+ makeCacheMatrix <- function(x = matrix()) { #stored a solvablematrix as default
 
 	# The function is called to create the functions object so create empty cache
 	im <- NULL			 	
@@ -47,7 +47,7 @@
 # The following function is also fully based on the example 'cachemean'
 # that was shared by R.D. Peng, as part of the course material.
 # It calculates the inverse using the special "matrix" object created with the 
-# above function. However, it first checks to see if the
+# makeCacheMatrix function. However, it first checks to see if the
 # inverse has not already been calculated. If availabe, it gets the inverse
 # from the cache and skips the computation. Otherwise, it calculates the inverse 
 # of the matrix and stores the inverse in the cache via the `setInverse`
@@ -55,7 +55,7 @@
 
 
 # when calling cacheInverse, provide it with the object created with make Matrix.
-cacheInverse <- function(x, ...) {
+cacheSolve <- function(x, ...) {
 		
 	# get the inversed cache from the object's get-function
 	im <- x$getInverse()
